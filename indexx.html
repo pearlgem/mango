@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+
+
+/* From Uiverse.io by Gaurav-WebDev */ 
+.button2 {
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.button2:hover {
+  box-shadow: .5px .5px 150px #252525;
+}
+
+.type1::after {
+  content: "Thanks";
+  height: 50px;
+  width: 150px;
+  background-color: #008080;
+  color: #fff;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(50px);
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.type1::before {
+  content: "Order Me";
+  height: 50px;
+  width: 150px;
+  background-color: #fff;
+  color: #008080;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(0px) scale(1.2);
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.type1:hover::after {
+  transform: translateY(0) scale(1.2);
+}
+
+.type1:hover::before {
+  transform: translateY(-50px) scale(0) rotate(120deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* From Uiverse.io by vinodjangid07 */ 
+.Btn2 {
+  width: 140px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+  background-size: 250%;
+  background-position: left;
+  color: #ffd277;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 1s;
+  overflow: hidden;
+}
+
+.Btn2::before {
+  position: absolute;
+  content: "Order Now!";
+  color: #ffd277;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97%;
+  height: 90%;
+  border-radius: 8px;
+  transition-duration: 1s;
+  background-color: rgba(0, 0, 0, 0.842);
+  background-size: 200%;
+}
+
+.Btn2:hover {
+  background-position: right;
+  transition-duration: 1s;
+  
+}
+
+.Btn2:hover::before {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.Btn2:active {
+  transform: scale(0.95);
+}
+
+
+
+
+
+
+
+
+
+
+        /* From Uiverse.io by vinodjangid07 */ 
+
+
+        
+.Btn {
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+.svgIcon {
+  width: 16px;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.Btn::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: .3s;
+  mix-blend-mode: difference;
+}
+
+.Btn:hover::before {
+  transition-duration: .3s;
+  transform: translate(100%,-50%);
+  border-radius: 0;
+}
+
+.Btn:active {
+  transform: translate(5px,5px);
+  transition-duration: .3s;
+}
+    </style>
+    </head>
+    <body>
+     <div class="container-fluid sm:mx-[10%] ">
+            <div class="navbar sm:flex sm:items-center sm:justify-between sm:px-10">
+          <div class="logo">
+            <img class="h-16" src="https://mangomap.com/couch/uploads/image/brand/mango-dark-1024.png" alt="">
+            </div> 
+            <div class="links ">
+                <ul class="sm:flex sm:gap-10 sm:m-1 sm:text-xl">
+                    <li>Types</li>
+                    <li>From</li>
+                    <li>About</li>
+                </ul>
+            </div>
+            <div class=""><button class="Btn">
+                Buy Mango
+                <svg class="svgIcon" viewBox="0 0 576 512"><path d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"></path></svg>
+              </button></div>
+        </div>
+        <div class="bg-emerald-400 sm:px-10  sm:p-10 sm:mt-10 sm:flex sm:gap-20 justify-between grid" >
+            <div class="details sm:w-[50%] w-full grid sm:grid-flow-row gap-10 ">
+                <div>
+                <div class="text-orange-400 text-6xl font-semibold" >Little lemon</div>
+                <div class="text-4xl text-white font-medium">Hyderabad</div></div>
+                <div class="para text-white font-medium">We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</div>
+                <div>
+                  <button class="Btn2">
+                  </button>
+
+                </div>
+            </div>
+            <div class="img"><img class="sm:h-96  " src="https://biancazapatka.com/wp-content/uploads/2020/01/vegan-mousse-mango-dessert.jpg" alt=""></div>
+
+        </div>
+        <div class="specials my-10">
+          <div class="sm:flex sm:justify-between">
+          <div class="text-4xl" >This week's Specials</div>
+          <div><button class="Btn2">Order Now</button></div>
+        </div>
+           <div class="card-container flex gap-2 justify-between overflow-x-scroll max-[200px]: w-full ">
+        <!-- card starts  -->
+           <div class="card w-64 bg-slate-300 mt-4 rounded-xl p-2">
+             <img class="w-full h-44" src="https://thewoksoflife.com/wp-content/uploads/2020/07/mango-sago-8.jpg" alt="">
+              <div class="card-body sm:py-5">
+               <h1 class="text-2xl font-semibold" >Mango Salad</h1>
+                <p class="mt-1 font-thin">The famous greek salad of crispy lettuce,</p>
+                <button class="button2 type1 mt-6">
+                </button>
+              </div>
+             </div>
+             <!-- card ends  -->
+        <!-- card starts  -->
+           <div class="card w-64 bg-slate-300 mt-4 rounded-xl p-2">
+             <img class="w-full h-44" src="https://thewoksoflife.com/wp-content/uploads/2020/07/mango-sago-8.jpg" alt="">
+              <div class="card-body sm:py-5">
+               <h1 class="text-2xl font-semibold" >Mango Salad</h1>
+                <p class="mt-1 font-thin">The famous greek salad of crispy lettuce,</p>
+                <button class="button2 type1 mt-6">
+                </button>
+              </div>
+             </div>
+             <!-- card ends  -->
+        <!-- card starts  -->
+           <div class="card w-64 bg-slate-300 mt-4 rounded-xl p-2">
+             <img class="w-full h-44" src="https://thewoksoflife.com/wp-content/uploads/2020/07/mango-sago-8.jpg" alt="">
+              <div class="card-body sm:py-5">
+               <h1 class="text-2xl font-semibold" >Mango Salad</h1>
+                <p class="mt-1 font-thin">The famous greek salad of crispy lettuce,</p>
+                <button class="button2 type1 mt-6">
+                </button>
+              </div>
+             </div>
+             <!-- card ends  -->
+        <!-- card starts  -->
+           <div class="card w-64 bg-slate-300 mt-4 rounded-xl p-2">
+             <img class="w-full h-44" src="https://thewoksoflife.com/wp-content/uploads/2020/07/mango-sago-8.jpg" alt="">
+              <div class="card-body sm:py-5">
+               <h1 class="text-2xl font-semibold" >Mango Salad</h1>
+                <p class="mt-1 font-thin">The famous greek salad of crispy lettuce,</p>
+                <button class="button2 type1 mt-6">
+                </button>
+              </div>
+             </div>
+             <!-- card ends  -->
+
+              <!-- card starts  -->
+           <div class="card w-64 bg-slate-300 mt-4 rounded-xl p-2">
+            <img class="w-full h-44" src="https://thewoksoflife.com/wp-content/uploads/2020/07/mango-sago-8.jpg" alt="">
+             <div class="card-body sm:py-5">
+              <h1 class="text-2xl font-semibold" >Mango Salad</h1>
+               <p class="mt-1 font-thin">The famous greek salad of crispy lettuce,</p>
+               <button class="button2 type1 mt-6">
+               </button>
+             </div>
+            </div>
+            <!-- card ends  -->
+
+            <!-- card starts  -->
+           <div class="card w-64 bg-slate-300 mt-4 rounded-xl p-2">
+            <img class="w-full h-44" src="https://thewoksoflife.com/wp-content/uploads/2020/07/mango-sago-8.jpg" alt="">
+             <div class="card-body sm:py-5">
+              <h1 class="text-2xl font-semibold" >Mango Salad</h1>
+               <p class="mt-1 font-thin">The famous greek salad of crispy lettuce,</p>
+               <button class="button2 type1 mt-6">
+               </button>
+             </div>
+            </div>
+            <!-- card ends  -->
+
+            <!-- card starts  -->
+           <div class="card w-64 bg-slate-300 mt-4 rounded-xl p-2">
+            <img class="w-full h-44" src="https://thewoksoflife.com/wp-content/uploads/2020/07/mango-sago-8.jpg" alt="">
+             <div class="card-body sm:py-5">
+              <h1 class="text-2xl font-semibold" >Mango Salad</h1>
+               <p class="mt-1 font-thin">The famous greek salad of crispy lettuce,</p>
+               <button class="button2 type1 mt-6">
+               </button>
+             </div>
+            </div>
+            <!-- card ends  -->
+
+            <!-- card starts  -->
+           <div class="card w-64 bg-slate-300 mt-4 rounded-xl p-2">
+            <img class="w-full h-44" src="https://thewoksoflife.com/wp-content/uploads/2020/07/mango-sago-8.jpg" alt="">
+             <div class="card-body sm:py-5">
+              <h1 class="text-2xl font-semibold" >Mango Salad</h1>
+               <p class="mt-1 font-thin">The famous greek salad of crispy lettuce,</p>
+               <button class="button2 type1 mt-6">
+               </button>
+             </div>
+            </div>
+            <!-- card ends  -->
+
+            <!-- card starts  -->
+           <div class="card w-64 bg-slate-300 mt-4 rounded-xl p-2">
+            <img class="w-full h-44" src="https://thewoksoflife.com/wp-content/uploads/2020/07/mango-sago-8.jpg" alt="">
+             <div class="card-body sm:py-5">
+              <h1 class="text-2xl font-semibold" >Mango Salad</h1>
+               <p class="mt-1 font-thin">The famous greek salad of crispy lettuce,</p>
+               <button class="button2 type1 mt-6">
+               </button>
+             </div>
+            </div>
+            <!-- card ends  -->
+
+             <!-- card starts  -->
+           <div class="card w-64 bg-slate-300 mt-4 rounded-xl p-2">
+            <img class="w-full h-44" src="https://thewoksoflife.com/wp-content/uploads/2020/07/mango-sago-8.jpg" alt="">
+             <div class="card-body sm:py-5">
+              <h1 class="text-2xl font-semibold" >Mango Salad</h1>
+               <p class="mt-1 font-thin">The famous greek salad of crispy lettuce,</p>
+               <button class="button2 type1 mt-6">
+               </button>
+             </div>
+            </div>
+            <!-- card ends  -->
+      </div>
+            
+    </div>
+</body>
+</html>
